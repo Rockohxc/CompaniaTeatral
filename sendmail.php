@@ -20,7 +20,7 @@
 
     // Status strings
     $sent_message = 'Email Sent Successfully!';
-    $send_error_message = 'Error, please try again...';
+    $send_error_message = 'Por favor, intentalo más tarde...';
 
     // Email subject
     $email_subject = 'New message from ' . "[$_SERVER[HTTP_HOST]]";

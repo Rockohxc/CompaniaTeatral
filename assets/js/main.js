@@ -16,7 +16,7 @@
     document.cookie = cname + "=" + cvalue + expires + "; path=/";
   }
 
-  //Return a particular cookie
+  //Retorna una cookie en particular
   function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -33,7 +33,7 @@
     return "";
   }
 
-  //Checks if a cookie exists
+  //Checkea si hay una cookie activa
   function checkCookie(cookieToCheck) {
     var cookie = getCookie(cookieToCheck);
     if (cookie != "") {
@@ -42,7 +42,7 @@
     return false;
   }
 
-  //Delet an existing cookie
+  //Borra una cookie activa
   function deleteCookie(name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   }
@@ -60,7 +60,7 @@
   });
 
   /*-------------------------------------------------------------------------------
- 	Mobile Nav and Toggles
+ 	Nav Mobile y Toggles
   -------------------------------------------------------------------------------*/
   $(".aside-trigger").on('click', function() {
     $("body").toggleClass('aside-open');
@@ -78,7 +78,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  Search Trigger
+  Trigger de busqueda
   -------------------------------------------------------------------------------*/
   $(".search-trigger").on('click', function(e) {
     $(".search-form-wrapper").toggleClass('open');
@@ -90,7 +90,7 @@
   $('[data-toggle="tooltip"]').tooltip();
 
   /*-------------------------------------------------------------------------------
-  Sticky Header
+  Sticky Header (Header en seguimiento o pegajoso)
   -------------------------------------------------------------------------------*/
   var header = $(".can-sticky");
   var headerHeight = header.innerHeight();
@@ -107,7 +107,7 @@
   doSticky();
 
   /*-------------------------------------------------------------------------------
-  Team Socials Trigger
+  Trigger de Team Socials 
   -------------------------------------------------------------------------------*/
   $("a.trigger-team-socials").on('click', function(e) {
     e.preventDefault();
@@ -115,7 +115,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  Back to top
+  Volver al inicio
   -------------------------------------------------------------------------------*/
   function stickBackToTop() {
     if (window.pageYOffset > 400) {
@@ -134,7 +134,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  Progress bar on view
+  Barra de progreso en View
   -------------------------------------------------------------------------------*/
   $(".sigma_progress").each(function() {
     var progressBar = $(this).find(".progress-bar");
@@ -164,7 +164,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  Magnific Popup
+  Popup magnifico
   -------------------------------------------------------------------------------*/
   $('.popup-video').magnificPopup({type: 'iframe'});
   $('.gallery-thumb').magnificPopup({
@@ -175,7 +175,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  ion Range Sliders (Price filter)
+  ion Range Sliders (filtro de precio)
   -------------------------------------------------------------------------------*/
   $(".js-range-slider").ionRangeSlider();
 
@@ -239,7 +239,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  Instagram Feed
+  Feed para Instagram
   -------------------------------------------------------------------------------*/
   $(window).on('load',function(){
   $('.sigma_instagram').each(function() {
@@ -260,7 +260,7 @@
   });
 
   /*-------------------------------------------------------------------------------
-  smooth scroll
+  Scroll suave
   -------------------------------------------------------------------------------*/
 
   $('.detail-menu-list .nav-item .nav-link').on( 'click', function(event) {
